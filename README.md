@@ -5,7 +5,7 @@ Install packages
 ```bash
 pip install torch transformers trl peft ipykernel ipywidgets
 ```
-Inference on one sample, providing a *note* and a *condition* of interest.
+Inference on one sample, providing a `note` and a `condition` of interest ("cancer" or "diabetes" for now).
 ```bash
 python example_run.py --sample_note 'sample_note.txt' --sample_condition diabetes
 
@@ -21,7 +21,7 @@ The answer pairs used for reward model training is available at [hanyinwang/laye
 
 To generate additional answer pairs:
 ```bash
-cd code;
+cd code
 python generate_answer_pairs.py \
 	--model_name openai-community/gpt2 \
 	--data_path ../data/layer-sample-data-partially-labeled.csv \
@@ -37,7 +37,7 @@ python generate_answer_pairs.py \
 ### To train reward model
 Trainer uses wandb, [setup](https://docs.wandb.ai/tutorials/huggingface) before running.
 ```bash
-cd code;
+cd code
 python train_reward_model.py \
 	--model_name TinyLlama/TinyLlama-1.1B-intermediate-step-1431k-3T \
 	--reward_training_data hanyinwang/layer-project-reward-training \ # data on huggingface
@@ -60,7 +60,7 @@ python train_reward_model.py \
 
 ### To train policy model using PPO
 ```bash
-cd code;
+cd code
 python ppo_train_policy_model.py \
 	--data_path '../data/layer-sample-data-unlabeled.csv' \ # unlabeled data for PPO training
 	--num_samples 200 \
