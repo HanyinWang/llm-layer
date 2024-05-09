@@ -6,49 +6,12 @@ Install packages
 pip install torch transformers trl peft ipykernel ipywidgets
 ```
 Inference on one sample, providing a *note* and a *condition* of interest.
-```python
-# import necessary pkg
-from transformers import AutoTokenizer
-from trl import AutoModelForCausalLMWithValueHead
-from peft import LoraConfig
-from utils import *
+```bash
+python example_run.py --sample_note 'sample_note.txt' --sample_condition diabetes
 
-# tokenizer arguments
-tokenizer_kwargs = {
-  "padding": "max_length",
-  "truncation": True,
-  "return_tensors": "pt",
-  "padding_side": "left"
-}
+## Reponse from diagnostic-mistral: 
 
-# load tokenizer
-tokenizer = AutoTokenizer.from_pretrained("hanyinwang/layer-project-diagnostic-mistral", **tokenizer_kwargs)
-tokenizer.pad_token = tokenizer.eos_token
-
-# generation arguments
-generation_kwargs = {
-  "min_length": -1,
-  "top_k": 40,
-  "top_p": 0.95,
-  "do_sample": True,
-  "pad_token_id": tokenizer.eos_token_id,
-  "max_new_tokens":11,
-  "temperature":0.1,
-  "repetition_penalty":1.2
-}
-
-# load fine-tuned model
-model = AutoModelForCausalLMWithValueHead.from_pretrained("hanyinwang/layer-project-diagnostic-mistral").cuda()
-
-# query the model
-query_tensors = tokenizer.encode(format_prompt_mistral(<note>, <condition>), return_tensors="pt")
-# <note>: clinical note
-# <condition>: "cancer" or "diabetes"
-prompt_length = query_tensors.shape[1]
-
-# response
-outputs = model.generate(query_tensors.cuda(), **generation_kwargs)
-response = tokenizer.decode(outputs[0][prompt_length:])
+## {"diabetes": "NO"}</s>
 ```
 
 
