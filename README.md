@@ -43,3 +43,24 @@ python train_reward_model.py \
 	--no_cuda False \
 	--remove_unused_columns True
 ```
+
+### To train policy model using PPO
+```
+cd code;
+python ppo_train_policy_model.py \
+	--data_path '../data/layer-sample-data-unlabeled.csv' \ # unlabeled data for PPO training
+	--num_samples 200 \
+	--trained_reward_model "hanyinwang/layer-project-reward-model" \ # trained reward model
+	--base_policy_model 'mistralai/Mistral-7B-Instruct-v0.2' \
+	--push_to_hub_repo "hanyinwang/layer-project-diagnostic-mistral" \
+	--learning_rate 5e-5 \
+	--batch_size 1 \
+	--mini_batch_size 1 \
+	--gen_min_length -1 \
+	--gen_top_k 100 \
+	--gen_top_p 0.95 \
+	--gen_max_new_tokens 11 \
+	--gen_temperature 0.5 \
+	--gen_repetition_penalty 1.2 \
+	--num_epoch 1
+```
