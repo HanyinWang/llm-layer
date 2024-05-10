@@ -1,4 +1,19 @@
-# layer-project-IMO
+# <ins>L</ins>LM <ins>A</ins>ugmented s<ins>Y</ins>mptom <ins>E</ins>xtraction & <ins>R</ins>ecognition (LAYER)
+
+
+## Scope
+
+1. [Zero-shot GPT-4](https://github.com/HanyinWang/layer-project-IMO/blob/main/code/0-GPT4.ipynb)
+2. Fine-tuning using Reimforcemnent Learning with Human Feedback (RLHF)
+   - Base (policy) model: [mistralai/Mistral-7B-Instruct-v0.2](https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2)
+   - [Reward model fine-tuning](https://github.com/HanyinWang/layer-project-IMO/blob/main/code/train_reward_model.py)
+     - Base model: [TinyLlama/TinyLlama-1.1B-intermediate-step-1431k-3T](https://huggingface.co/TinyLlama/TinyLlama-1.1B-intermediate-step-1431k-3T)
+     - Training data: [answer pairs](https://huggingface.co/datasets/hanyinwang/layer-project-reward-training) derived from the sample dataset.
+     - Resulting reward model: [hanyinwang/layer-project-reward-model](https://huggingface.co/hanyinwang/layer-project-reward-model)
+   - [Update policy model with PPO](https://github.com/HanyinWang/layer-project-IMO/blob/main/code/ppo_train_policy_model.py)
+     - Training data: unlabeled data from provided dataset
+     - Resulting model: [hanyinwang/layer-project-diagnostic-mistral](https://huggingface.co/hanyinwang/layer-project-diagnostic-mistral)
+
 
 ## Usage
 Install packages
