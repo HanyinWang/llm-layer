@@ -46,7 +46,8 @@ def parse_option():
     	help = 'whether or not to automatically remove the columns unused by the model forward method')
     parser.add_argument('--layers_to_train', type = str, default = '21',
     	help = 'common seperated string, train only the mentioned layers, freeze weights for the rw_dataset_train_test')
-
+    parser.add_argument('push_to_hub', type = bool, default = False,
+        help = 'whether or not push trained model to huggingface hub')
     opt = parser.parse_args()
 
     return opt
@@ -98,11 +99,11 @@ training_args = TrainingArguments(
         save_total_limit=opt.save_total_limit,
         no_cuda=opt.no_cuda,
         remove_unused_columns=opt.remove_unused_columns,
-        ## use the following arguments when pushing to hub
-        # hub_strategy="every_save",
-        # push_to_hub=True,
-        # hub_model_id="hanyinwang/layer-project-reward-model",
-        # hub_private_repo=True,
+        # use the following arguments when pushing to hub
+        push_to_hub=opt.push_to_hub,
+        hub_strategy="every_save",
+        hub_model_id="hanyinwang/layer-project-reward-model",
+        hub_private_repo=True,
     )
 
 trainer = RewardTrainer(model=rw_model,
@@ -114,8 +115,9 @@ trainer = RewardTrainer(model=rw_model,
                         )
 trainer.train()
 
-## if push to hub
-# trainer.push_to_hub()
+# if push to hub
+if opt.push_to_hub:
+    trainer.push_to_hub()
 
 
 
