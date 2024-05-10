@@ -1,6 +1,7 @@
 # <ins>L</ins>LM <ins>A</ins>ugmented s<ins>Y</ins>mptom <ins>E</ins>xtraction & <ins>R</ins>ecognition (LAYER)
 
-
+##
+Slides: [project-summary.pdf](https://github.com/HanyinWang/layer-project-IMO/blob/main/project-summary.pdf)
 ## Scope
 
 1. [Zero-shot GPT-4](https://github.com/HanyinWang/layer-project-IMO/blob/main/code/0-GPT4.ipynb)
