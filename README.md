@@ -70,8 +70,7 @@ python train_reward_model.py \
 	--warmup_steps 10 \
 	--learning_rate 1e-5 \
 	--save_total_limit 1 \
-	--no_cuda False \
-	--remove_unused_columns True
+	--remove_unused_columns
 ```
 
 ### To train policy model using PPO
