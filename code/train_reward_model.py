@@ -40,13 +40,13 @@ def parse_option():
     	help = 'the initial learning rate')
     parser.add_argument('--save_total_limit', type = int, default = None,
     	help = 'if a value is passed, will limit the total amount of checkpoints')
-    parser.add_argument('--no_cuda', type = bool, default = False,
+    parser.add_argument('--no_cuda', action='store_true',
     	help = 'no cuda')
-    parser.add_argument('--remove_unused_columns', type = bool, default = True,
+    parser.add_argument('--remove_unused_columns', action='store_true',
     	help = 'whether or not to automatically remove the columns unused by the model forward method')
     parser.add_argument('--layers_to_train', type = str, default = '21',
     	help = 'common seperated string, train only the mentioned layers, freeze weights for the rw_dataset_train_test')
-    parser.add_argument('push_to_hub', type = bool, default = False,
+    parser.add_argument('--push_to_hub', action='store_true',
         help = 'whether or not push trained model to huggingface hub')
     opt = parser.parse_args()
 
