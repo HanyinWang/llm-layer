@@ -19,16 +19,26 @@ Slides: [project-summary.pdf](https://github.com/HanyinWang/layer-project-IMO/bl
 ## Usage
 Install packages
 ```bash
-pip install torch transformers trl peft ipykernel ipywidgets
+pip install torch transformers trl peft ipykernel ipywidgets faiss-cpu==1.7.4 python-liquid==1.10.2 sentence_transformers==2.2.2 openai==0.28.0 tiktoken==0.6.0
 ```
 Inference on one sample, providing a `note` and a `condition` of interest ("cancer" or "diabetes" for now).
+- With RAG
+```bash
+python example_run.py --sample_note 'sample_note.txt' --sample_condition diabetes --use_rag
+
+## Reponse from diagnostic-mistral with RAG:  {"diabetes": "NO"}
+```
+- Without RAG
 ```bash
 python example_run.py --sample_note 'sample_note.txt' --sample_condition diabetes
 
-## Reponse from diagnostic-mistral: 
+## Reponse from diagnostic-mistral without RAG: 
 
 ## {"diabetes": "NO"}</s>
 ```
+
+> [!NOTE]
+> RAG is implemented from [MedRAG](https://github.com/Teddy-XiongGZ/MedRAG/tree/main) with [MedCPT](https://huggingface.co/ncbi/MedCPT-Query-Encoder) retriever on [StatPearls](https://www.statpearls.com/) corpus
 
 
 ## Training details
