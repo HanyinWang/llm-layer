@@ -93,12 +93,12 @@ def extract(fpath):
     return saved_text
 
 if __name__ == "__main__":
-    fnames = sorted([fname for fname in os.listdir("corpus/statpearls/statpearls_NBK430685") if fname.endswith("nxml")])
-    if not os.path.exists("corpus/statpearls/chunk"):
-        os.makedirs("corpus/statpearls/chunk")
+    fnames = sorted([fname for fname in os.listdir("MedRAG/corpus/statpearls/statpearls_NBK430685") if fname.endswith("nxml")])
+    if not os.path.exists("MedRAG/corpus/statpearls/chunk"):
+        os.makedirs("MedRAG/corpus/statpearls/chunk")
     for fname in tqdm.tqdm(fnames):
-        fpath = os.path.join("corpus/statpearls/statpearls_NBK430685", fname)
+        fpath = os.path.join("MedRAG/corpus/statpearls/statpearls_NBK430685", fname)
         saved_text = extract(fpath)
         if len(saved_text) > 0:
-            with open("corpus/statpearls/chunk/{:s}".format(fname.replace(".nxml", ".jsonl")), 'w') as f:
+            with open("MedRAG/corpus/statpearls/chunk/{:s}".format(fname.replace(".nxml", ".jsonl")), 'w') as f:
                 f.write('\n'.join(saved_text))
