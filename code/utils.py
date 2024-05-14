@@ -95,7 +95,7 @@ def construct_index(index_dir, model_name, h_dim=768):
 
 class Retriever: 
 
-    def __init__(self, retriever_name="ncbi/MedCPT-Query-Encoder", corpus_name="textbooks", db_dir="/home/hwi3319/IMO/code/MedRAG/src/corpus", **kwarg):
+    def __init__(self, retriever_name="ncbi/MedCPT-Query-Encoder", corpus_name="textbooks", db_dir="/MedRAG/src/corpus", **kwarg):
         self.retriever_name = retriever_name
         self.corpus_name = corpus_name
 
@@ -107,11 +107,11 @@ class Retriever:
             print("Cloning the {:s} corpus from Huggingface...".format(self.corpus_name))
             os.system("git clone https://huggingface.co/datasets/MedRAG/{:s} {:s}".format(corpus_name, os.path.join(self.db_dir, self.corpus_name)))
             if self.corpus_name == "statpearls":
-                print("Downloading the statpearls corpus from NCBI bookshelf...")
-                os.system("wget https://ftp.ncbi.nlm.nih.gov/pub/litarch/3d/12/statpearls_NBK430685.tar.gz -P {:s}".format(os.path.join(self.db_dir, self.corpus_name)))
-                os.system("tar -xzvf {:s} -C {:s}".format(os.path.join(db_dir, self.corpus_name, "statpearls_NBK430685.tar.gz"), os.path.join(self.db_dir, self.corpus_name)))
+                # print("Downloading the statpearls corpus from NCBI bookshelf...")
+                # os.system("wget https://ftp.ncbi.nlm.nih.gov/pub/litarch/3d/12/statpearls_NBK430685.tar.gz -P {:s}".format(os.path.join(self.db_dir, self.corpus_name)))
+                # os.system("tar -xzvf {:s} -C {:s}".format(os.path.join(db_dir, self.corpus_name, "statpearls_NBK430685.tar.gz"), os.path.join(self.db_dir, self.corpus_name)))
                 print("Chunking the statpearls corpus...")
-                os.system("python src/data/statpearls.py")
+                os.system("python MedRAG/src/data/statpearls.py")
         self.index_dir = os.path.join(self.db_dir, self.corpus_name, "index", self.retriever_name.replace("Query-Encoder", "Article-Encoder"))
         if "bm25" in self.retriever_name.lower():
             from pyserini.search.lucene import LuceneSearcher
@@ -168,7 +168,7 @@ class Retriever:
 
 class RetrievalSystem:
 
-    def __init__(self, retriever_name="MedCPT", corpus_name="Textbooks", db_dir="/home/hwi3319/IMO/code/MedRAG/src/corpus"):
+    def __init__(self, retriever_name="MedCPT", corpus_name="Textbooks", db_dir="code/MedRAG/src/corpus"):
         self.retriever_name = retriever_name
         self.corpus_name = corpus_name
         assert self.corpus_name in corpus_names
