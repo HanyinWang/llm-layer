@@ -81,7 +81,7 @@ generation_kwargs = {
     'repetition_penalty':opt.gen_repetition_penalty # no penalty
     
 }
-prompt_lst = [format_prompt_rw(data_partially_labeled['text'].iloc[i], data_partially_labeled['condition'].iloc[i]) for i in range(len(data_partially_labeled))]
+prompt_lst = [format_prompt_ap(data_partially_labeled['text'].iloc[i], data_partially_labeled['condition'].iloc[i]) for i in range(len(data_partially_labeled))]
 # list of unwanted answers
 rejected_lst = []
 for text in tqdm(prompt_lst):

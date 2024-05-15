@@ -6,7 +6,7 @@ from sentence_transformers import SentenceTransformer
 import os
 import faiss
 import json
-import tqdm
+from tqdm import tqdm
 
 corpus_names = {
     "PubMed": ["pubmed"],
