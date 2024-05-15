@@ -1,5 +1,5 @@
-,Unnamed: 0,patient_identifier,text,has_diabetes,gpt4_response,mistral_response,finetuned_mistral_response,finetuned_mistral_response_w_rag
-0,0,2200,"DISCHARGE SUMMARY:
+,patient_identifier,text,has_diabetes,gpt4_response,mistral_response,finetuned_mistral_response,finetuned_mistral_response_w_rag
+0,2200,"DISCHARGE SUMMARY:
 
 Patient Name: [Redacted]
 Age: 38
@@ -27,7 +27,7 @@ The patient was discharged in April 2018 and continued her follow-up with best s
 Output: {""diabetes"": ""NO","
 
 {""diabetes"": ""NO""}</s>"," {""diabetes"": ""NO""}"
-1,1,645,"Discharge Summary:
+1,645,"Discharge Summary:
 
 Patient: [Name]
 
@@ -57,7 +57,7 @@ Follow-Up:
 
 A follow-up was scheduled at a convenient date for the patient.",0,{'diabetes': 'NO'},"However, the family failed to attend the appointment.
 ","However, the family failed to attend subsequent appointments despite"," {""diabetes"": ""NO""}"
-2,2,2563,"Discharge Summary:
+2,2563,"Discharge Summary:
 Patient name: [REDACTED]
 Sex: Female
 Age: 70 years
@@ -82,7 +82,7 @@ The patient's condition remained unchanged. She remained dialysis dependent at t
 Output: {""diabetes"": ""NO","
 
 {""diabetes"": ""NO""}</s>"," {""diabetes"": ""NO""}"
-3,3,2275,"Discharge Summary:
+3,2275,"Discharge Summary:
 
 Patient: 59-year-old Italian male with HBV and HCV co-infection, presenting with a lesion on the left lower lip.
 
@@ -101,7 +101,7 @@ The patient is advised to continue taking his TB medication as prescribed and to
 Output: {""diabetes"": ""NO","
 
 {""diabetes"": ""NO""}</s>"," {""diabetes"": ""NO""}"
-4,4,1828,"Hospital Course:
+4,1828,"Hospital Course:
 
 The 80-year-old male presented to the emergency department with hematemesis and bleeding around the gastrostomy site. A review of his medication list showed he was taking aspirin 81 mg daily but no additional antiplatelet drugs, anticoagulants, or nonsteroidal anti-inflammatory drugs (NSAIDs). On physical exam, he was hypotensive, tachycardic, and febrile. The gastric ulcer with signs of recent bleeding was revealed as the cause of his gastrointestinal bleeding on EGD, which also showed dislodgment of the gastrostomy tube with compression and ulceration of the gastric wall. The dislodged gastrostomy tube was replaced with a new balloon gastrostomy tube by endoscopy.
 
@@ -112,7 +112,7 @@ The patient with a prior stroke, dementia, hypertension, hyperlipidemia, and dia
 Output: {""diabetes"": ""Y","
 
 {""diabetes"": ""YES""}"," {""diabetes"": ""YES""}"
-5,5,1523,"Discharge Summary:
+5,1523,"Discharge Summary:
 
 Patient Name: [Redacted]
 DOB: [Redacted]
@@ -146,7 +146,7 @@ Dr.[Redacted]",0,{'diabetes': 'NO'},"
 Output: {""diabetes"": ""NO","
 
 {""diabetes"": ""NO""}</s>"," {""diabetes"": ""NO""}"
-6,6,157,"[Hospital Course]
+6,157,"[Hospital Course]
 
 The 60-year-old Japanese male patient was admitted due to dyspnea, tachypnea, hypoxemia, and low-grade fever. Blood tests showed leukocytosis, high C-reactive protein levels, and normal liver and renal function. Imaging tests revealed diffuse ground-glass opacification and consolidation in bilateral lung fields. He received noninvasive intermittent positive pressure ventilation and high-dose intravenous methylprednisolone therapy, as well as empiric antibiotics, for an ARDS of unknown etiology.
 
@@ -165,7 +165,7 @@ The patient was discharged after a complete resolution of symptoms without any c
 Output: {""diabetes"": ""NO","
 
 {""diabetes"": ""NO""}</s>"," {""diabetes"": ""NO""}"
-7,7,3133,"Discharge Summary:
+7,3133,"Discharge Summary:
 
 Patient Information:
 The patient is a 23-year-old female with end-stage renal disease (ESRD) secondary to hypoplastic kidneys who underwent a renal transplant using kidneys from a 9-month-old female donor.
@@ -183,7 +183,7 @@ Follow-up:
 The patient will require regular follow-up with her transplant team to monitor her kidney function.",0,{'diabetes': 'NO'},"
 
 Output: {""diabetes"": ""NO",She should also continue taking immunosuppressive," {""diabetes"": ""NO""}"
-8,8,1949,"Discharge Summary:
+8,1949,"Discharge Summary:
 
 Patient Name: Japanese male, age 53
 
@@ -214,7 +214,7 @@ All medical information in this document is confidential and intended only for t
 Output: {""diabetes"": ""NO","
 
 {""diabetes"": ""NO""}</s>"," {""diabetes"": ""NO""}"
-9,9,498,"Discharge Summary
+9,498,"Discharge Summary
 
 Patient Name: [Redacted]
 
@@ -255,7 +255,7 @@ Signed,
 Output: {""diabetes"":","MD
 
 {""diabetes"": ""NO""}"," {""diabetes"": ""NO""}"
-10,10,1170,"Name: N/A
+10,1170,"Name: N/A
 Age: 40
 Sex: Male
 
@@ -277,7 +277,7 @@ Summary:
 Output: {""diabetes"": ""NO","
 
 {""diabetes"": ""NO""}</s>"," {""diabetes"": ""NO""}"
-11,11,213,"Discharge Summary:
+11,213,"Discharge Summary:
 
 Patient Name: N/A
 Hospital Number: N/A
@@ -303,7 +303,7 @@ Follow-Up:
 It is recommended that the patient continue to follow up with imaging and endocrine evaluation to monitor for any potential recurrence of the pituitary mass or complications related to his existing hormone deficiencies. The patient should be advised to seek medical attention if he experiences any recurrence of symptoms.",0,{'diabetes': 'NO'},"Based on the provided document, the answer would be:","
 
 {""diabetes"": ""YES""}"," {""diabetes"": ""MAYBE""}"
-12,12,1221,"Hospital Course:
+12,1221,"Hospital Course:
 Patient 2, a 32-year-old male with a history of CDH1 mutation and HDGC, presented for prophylactic total gastrectomy. The procedure was completed without complications, and the patient was discharged home on post-operative day 7.
 
 Admission:
@@ -318,7 +318,7 @@ Patient 2 underwent prophylactic total gastrectomy due to the presence of the CD
 Output: {""diabetes"": ""NO","
 
 {""diabetes"": ""NO""}</s>"," {""diabetes"": ""NO""}"
-13,13,503,"Hospital Course:
+13,503,"Hospital Course:
 The patient, a 79-year-old woman, was admitted for evaluation of abnormal murmur. She presented with a 3-months history of worsening shortness of breath and orthopnea. Physical examination revealed a soft continuous murmur at the left upper chest with basal crackles in both lungs. Chest radiography showed mild cardiomegaly with mild pulmonary congestion. The ECG showed regular sinus rhythm without evidence of ischemia or prior myocardial infarction.
 Transthoracic echocardiography demonstrated a mildly dilated LV with markedly dilated left atrium. The LV ejection fraction was 60% with no wall motion abnormality. Transthoracic echocardiography also showed an unusual, tubular-like structure inside the interventricular septum with a turbulent, predominantly diastolic flow on color Doppler. Transesophageal echocardiography revealed a markedly dilated RCA arising from the right aortic sinus, while the origin of the left coronary artery (LCA) could not be demonstrated. There was a tortuous, abnormal vessel located adjacent to the main pulmonary artery (MPA) emptying into the posteromedial aspect of the MPA. There was an accelerated, continuous flow across the stenotic ostium. Moreover, there was severe MR from a restricted posterior leaflet of the mitral valve (MV) associated with ventricular remodeling in combination with mitral annular dilatation.
 Coronary angiography with a single RCA injection revealed a markedly dilated RCA providing multiple intercoronary collaterals of various sizes communicating with the left coronary system. The LCA later opacified the MPA through a stenotic ostium, establishing the diagnostic hallmark of ALCAPA syndrome. The calculated ratio of pulmonary-systemic blood flow was 1.4, confirming a significant left-to-right shunt. Coronary computed tomography angiography clearly identified the ALCAPA with a retropulmonary ostium. Volume-rendered image depicted the course of the anomalous coronary arteries and its inter-coronary collateral pathways along the epicardial surface and where the LCA connected to the MPA. Stress cardiovascular magnetic resonance perfusion imaging demonstrated no myocardial ischemia, suggesting adequate collateral circulation to the LV.
@@ -329,7 +329,7 @@ The patient was diagnosed with ALCAPA syndrome, a congenital heart defect, resul
 Output: {""diabetes"": ""NO","
 
 {""diabetes"": ""NO""}</s>"," {""diabetes"": ""NO""}"
-14,14,1320,"Hospital Course:
+14,1320,"Hospital Course:
 The patient presented to the clinical department with a slow-growing swelling on the left side of the face that had been present for the past two years causing slight discomfort upon mastication. The patient underwent extraoral and intra-oral examinations that revealed marked facial asymmetry and a swelling extending from tooth 32 to the ramus of the mandible causing displacement of teeth 34, 35, and 37. Orthopantomogram demonstrated a large unilocular radiolucency extending from the left parasymphyseal area of the mandible up to the ramus and root resorption of teeth 33, 34, 35, and 37 was seen along with the residual roots of tooth 36. An incisional biopsy revealed a fibro-osseous lesion, and the final diagnosis was established as central odontogenic fibroma. The patient underwent surgical excision of the lesion, and on the third-month follow-up, a significant decrease in extraoral swelling was observed. 
 
 Hospital Course Summary:
@@ -343,7 +343,7 @@ Hospital Course Summary:
 Output: {""diabetes"": ""NO","
 
 {""diabetes"": ""NO""}</s>"," {""diabetes"": ""NO""}"
-15,15,2421,"Discharge Summary:
+15,2421,"Discharge Summary:
 
 Patient Name: [REDACTED]
 
@@ -372,7 +372,7 @@ Signed by: [REDACTED]",0,{'diabetes': 'NO'},"
 Output: {""diabetes"": ""NO","MD
 
 {""diabetes"": ""NO""}"," {""diabetes"": ""NO""}"
-16,16,3041,"Discharge Summary:
+16,3041,"Discharge Summary:
 
 Patient: 60-year-old male from Jamalpur district
 Admission Date: [Date]
@@ -402,7 +402,7 @@ The patient was admitted with the complaints of progressive non-itching hypomela
 Output: {""diabetes"": ""NO","
 
 {""diabetes"": ""NO""}</s>"," {""diabetes"": ""NO""}"
-17,17,2260,"Medical History:
+17,2260,"Medical History:
 The patient is a 52-year-old woman with a history of chemotherapy for coat cell lymphoma in 2011, splenectomy in 2013 and autologous bone marrow transplantation in 2014.
 
 Hospital Course:
@@ -420,7 +420,7 @@ The patient recovered from septic shock with improvement in hemodynamics and inf
 Output: {""diabetes"": ""NO","
 
 {""diabetes"": ""NO""}</s>"," {""diabetes"": ""NO""}"
-18,18,890,"Discharge Summary
+18,890,"Discharge Summary
 
 Admission Date: May 2013 
 Discharge Date: July 2013 
@@ -440,8 +440,8 @@ The patient was admitted with bicytopenia and diagnosed with MDS with excess bla
 
 Output: {""diabetes"": ""MA","
 
-{""diabetes"": ""YES""}"," {""diabetes"": ""MAYBE""}"
-19,19,710,"Hospital Course Summary:
+{""diabetes"": ""YES""}"," {""diabetes"": ""YES""}"
+19,710,"Hospital Course Summary:
 
 Patient’s hospital course was complicated by metastatic pulmonary large-cell neuroendocrine carcinoma that had progressed from the initial diagnosis and resulted in the patient receiving chemotherapy, radiotherapy, and immunotherapy with pembrolizumab. After 5 cycles of immunotherapy, the patient presented with dyspnea and cough but no fever. Clinical examination revealed oxygen saturation of 84%, and thorax angiotomography showed bilateral ground-glass opacities. Pulmonary thromboembolism was ruled out, and treatment with metilprednisolone and piperaciline-tazobactam was started for the suspicion of pneumonitis. The patient showed significant clinical improvement within 24 hours, and a controlled computed tomography performed 1 week after treatment showed almost full resolution of pulmonary opacities.
 
@@ -450,7 +450,7 @@ Discharge Summary:
 The patient, a 54-year-old man diagnosed with pulmonary large-cell neuroendocrine carcinoma, has been discharged in good condition after the treatment of complications related to immunotherapy with pembrolizumab. The patient responded well to treatment with metilprednisolone and piperaciline-tazobactam for pneumonitis. The patient is advised to follow up with their primary care physician and specialists as needed.",0,{'diabetes': 'NO'},"
 
 Output: {""diabetes"": ""NO",No evidence of active infection was found during this admission.," {""diabetes"": ""NO""}"
-20,20,2762,"Hospital Course:
+20,2762,"Hospital Course:
 
 This 70-year-old male patient was admitted to the hospital presenting with increased appetite, palpitations, weight loss, and heat intolerance. Physical examination revealed the presence of a 4 cm thyroid nodule in the left lobe. The patient had a known history of diabetes mellitus, hypertension, and coronary artery disease.
 
@@ -473,7 +473,7 @@ This 70-year-old male patient presented classic symptoms of hyperthyroidism whic
 Output: {""diabetes"": ""NO","
 
 {""diabetes"": ""YES""}"," {""diabetes"": ""NO""}"
-21,21,790,"Hospital Course:
+21,790,"Hospital Course:
 
 The 54-year-old Chinese male was admitted to our hospital for further investigation of an incidental liver mass. The patient had a history of hypertension for ten years and diabetes mellitus for five years. The patient also had a surgical history of splenectomy. The patient denied any liver cirrhosis and was negative for both hepatitis B virus (HBV) and hepatitis C virus (HCV).
 
@@ -500,7 +500,7 @@ The patient was advised for regular follow-up after discharge.",1,{'diabetes': '
 Output: {""diabetes"": ""Y","
 
 {""diabetes"": ""YES""}"," {""diabetes"": ""YES""}"
-22,22,1047,"Discharge Summary
+22,1047,"Discharge Summary
 
 Patient Name: [REDACTED]
 Gender: Male
@@ -525,7 +525,7 @@ Signed,
 Output: {""diabetes"": ""NO","
 
 {""diabetes"": ""NO""}</s>"," {""diabetes"": ""NO""}"
-23,23,2183,"DISCHARGE SUMMARY
+23,2183,"DISCHARGE SUMMARY
 
 Patient Name: [REDACTED]
 
@@ -560,7 +560,7 @@ The patient is to continue follow-up with her primary care physician and attendi
 Output: {""diabetes"": ""NO","
 
 {""diabetes"": ""NO""}</s>"," {""diabetes"": ""NO""}"
-24,24,461,"Hospital Course:
+24,461,"Hospital Course:
 The patient presented with left lower quadrant abdominal pain and elevated creatinine, which was subsequently identified on routine blood draw at a follow-up urology appointment. Computed tomography abdomen revealed hydronephrosis of the left kidney as well as bilateral ureteral thickening. The patient had a right ureter stent placed one month prior after presenting with acute kidney injury.
 
 Diagnostic Assessment:
@@ -574,8 +574,8 @@ The patient was discharged home symptom-free with close urologic follow-up.",0,{
 
 Output: {""diabetes"": ""NO","
 
-{""diabetes"": ""NO""}</s>"," {""diabetes"": ""MAYBE"", """
-25,25,2706,"Hospital Course:
+{""diabetes"": ""NO""}</s>"," {""diabetes"": ""MAYBE""}"
+25,2706,"Hospital Course:
 The 12-year-old Saudi boy presented with bleeding per rectum and mild abdominal pain 3 days after a blunt abdominal trauma. Initial examination revealed mild intraperitoneal fluid in his pelvis, later confirmed by CT scan to be mild pelvic hemoperitoneum. Serial observation showed a continuous fall in the hemoglobin level despite two units of packed red blood cells transfusion. The patient's clinical condition deteriorated, with a mild fever, tachycardia, and dropping blood pressure, leading to an urgent laparotomy. An injured Meckel's diverticulum was identified as the source of bleeding, and it was resected. The patient required 2 more units of PRBC transfusion during the operation, and 2 more units postoperatively, which increased the hemoglobin level to 10.2 gm/dl. The patient remained stable after the operation, developed a postoperative superficial surgical site infection, and was discharged home on postoperative day 7 with wound care instructions and OPD follow-up after 1 week. No further complications were found during the OPD visit.
 
 Summary:
@@ -584,7 +584,7 @@ A 12-year-old Saudi boy presented with bleeding per rectum and mild abdominal pa
 Output: {""diabetes"": ""NO","
 
 {""diabetes"": ""NO""}</s>"," {""diabetes"": ""NO""}"
-26,26,1814,"Discharge Summary:
+26,1814,"Discharge Summary:
 
 Patient Name: [REDACTED]
 Medical Record Number: [REDACTED]
@@ -619,7 +619,7 @@ The patient is discharged with stable vital signs, no evidence of complications,
 Output: {""diabetes"": ""NO","
 
 {""diabetes"": ""NO""}</s>"," {""diabetes"": ""NO""}"
-27,27,3146,"Hospital Course Summary:
+27,3146,"Hospital Course Summary:
 
 Admission Date: [Date of Admission]
 Discharge Date: [Date of Discharge]
@@ -648,7 +648,7 @@ Signed,
 Output: {""diabetes"": ""NO","
 
 {""diabetes"": ""NO""}</s>"," {""diabetes"": ""NO""}"
-28,28,777,"Discharge Summary:
+28,777,"Discharge Summary:
 
 
 Hospital Course:
@@ -678,7 +678,7 @@ The patient was advised to follow up on a monthly basis in our clinic.",0,{'diab
 Output: {""diabetes"": ""NO","
 
 {""diabetes"": ""NO""}</s>"," {""diabetes"": ""NO""}"
-29,29,418,"Hospital Course:
+29,418,"Hospital Course:
 The patient is a 64-year-old male with a medical history of micropapillary thyroid cancer and stage IIIb lung adenocarcinoma who presented with subjective complaints of fatigue, nausea, scalp tenderness, and xeroderma. A screening MRI revealed a new hypovascular pituitary mass measuring approximately 1 cm by 0.8 cm, which, upon further analysis, was discovered to be metastatic lung adenocarcinoma with a positive identification of cytokeratin 7, TTF-1, Ki-67, and epidermal growth factor receptor (EGFR) positive with EGFR gene nucleotide change demonstrating T790M and L858R positivity. The patient underwent transsphenoidal resection of his pituitary mass and subsequent whole-brain radiation. 
 
 Presenting Symptoms:
@@ -702,7 +702,7 @@ The patient presented with subjective complaints of fatigue, nausea, scalp tende
 Output: {""diabetes"": ""NO","
 
 {""diabetes"": ""NO""}</s>"," {""diabetes"": ""NO""}"
-30,30,2052,"Hospital Course:
+30,2052,"Hospital Course:
 The patient was admitted with a single gunshot wound to the abdomen and underwent exploratory laparotomy. At the index operation, he received a right hemicolectomy with end ileostomy due to colon avulsion with ischemia to the hepatic flexure. In addition, PD with choledochojejunostomy, pancreaticojejunostomy, and gastrojejunostomy was performed to manage an entrance and exit wound involving the duodenum's ampulla of Vater and distal common bile duct. He developed a high-grade obstruction at the biliary anastomosis postoperatively and underwent serial attempts at percutaneous cholangioplasty and stenting without success. The subsequent long-term management included percutaneous transhepatic drainage (PTD) and operative revision of the anastomosis to hepaticojejunostomy.
 
 Discharge Summary:
@@ -711,7 +711,7 @@ The patient was discharged after a prolonged hospital course, which involved sur
 Output: {""diabetes"": ""NO","
 
 {""diabetes"": ""NO""}</s>"," {""diabetes"": ""NO""}"
-31,31,2466,"Discharge Summary:
+31,2466,"Discharge Summary:
 
 Patient: 23-year-old male
 
@@ -752,7 +752,7 @@ IV: Intravenous",0,{'diabetes': 'NO'},"
 Output: {""diabetes"": ""NO","
 
 {""diabetes"": ""NO""}</s>"," {""diabetes"": ""NO""}"
-32,32,2776,"DISCHARGE SUMMARY
+32,2776,"DISCHARGE SUMMARY
 
 Patient Name: [REDACTED]
 Gender: Female
@@ -776,7 +776,7 @@ The patient's postoperative recovery was uneventful, and she was commenced on is
 Output: {""diabetes"": ""NO","
 
 {""diabetes"": ""NO""}</s>"," {""diabetes"": ""NO""}"
-33,33,1169,"Discharge Summary:
+33,1169,"Discharge Summary:
 
 Patient Name: [Redacted]
 Medical Record Number: [Redacted]
@@ -807,7 +807,7 @@ Signed,
 Output: {""diab","
 
 {""diabetes"": ""NO""}</s>"," {""diabetes"": ""NO""}"
-34,34,763,"Hospital Course:
+34,763,"Hospital Course:
 A 22-year-old male with a known hepatitis B infection presented with low-grade intermittent fever, nausea, and decreased urine output. On physical exam, the patient was delirious with scleral icterus, tachycardia, and a temperature of 101°F. Initial investigations revealed elevated serum creatinine and bilirubin levels. Hemodialysis was initiated on the second day of admission. Thrombotic thrombocytopenic purpura was ruled out, and an abdominal ultrasound showed mild ascites and splenomegaly. A head CT scan was negative, but a chest, abdomen, and pelvis CT showed multiple findings including basal consolidation, atelectasis in the lungs, swollen pancreas, thickened colon walls, hepatosplenomegaly, and kidney and peritoneal hemorrhages. Further investigations revealed a serum fibrinogen level of 292 mg/dL, serum triglyceride level of 496 mg/dL, and a serum ferritin level of 30,304 ng/mL. Blood cultures were unrevealing for microbial growth. A bone marrow biopsy on the tenth day of admission showed cellularity and increased hemophagocytic activity, suggesting hemophagocytic lymphohistiocytosis (HLH). Treatment with etoposide and dexamethasone was initiated per HLH protocol, and the patient showed clinical improvement.
  
 Hospital Course Summary:
@@ -816,7 +816,7 @@ A 22-year-old male with hepatitis B infection presented with delirium, low-grade
 Output: {""diabetes"": ""NO","
 
 {""diabetes"": ""NO""}</s>"," {""diabetes"": ""NO""}"
-35,35,2817,"Hospital Course:
+35,2817,"Hospital Course:
 
 The patient, a 56-year-old male with no known comorbidities, was admitted to the emergency department with fever, headache, and sporadic vomiting for the past 2 days. On admission, the patient exhibited fever, tachycardia, tachypnea, and poor sensorium. CT scan showed cystic gliosis changes in the left frontal lobe, which was consistent with the surgical history the patient had undergone for a CSF leak 23 years ago. CSF analysis revealed pleocytosis and hypoglycorrachia, suggesting acute pyogenic meningitis. The patient was started on empiric antibiotics and showed improvement. However, he experienced a drop in sensorium, and MRI of the brain with contrast showed post-contrast enhancement of leptomeninges and ventricular walls, along with exudates in the ventricles, indicating ventriculitis. CT cisternogram was performed to check for residual CSF leak, which revealed a porencephalic cyst communicating with the left frontal horn. The patient responded well to intravenous antibiotics and was discharged on day 10 with instructions to continue antibiotics for 6 weeks in view of ventriculitis.
 
@@ -831,7 +831,7 @@ The patient is to continue antibiotics as an outpatient for 6 weeks in view of v
 Output: {""diabetes"": ""NO","
 
 {""diabetes"": ""NO""}</s>"," {""diabetes"": ""NO""}"
-36,36,1534,"Hospital Course:
+36,1534,"Hospital Course:
 The patient, a 55-year-old female, was admitted to Mudanjiang Forestry Central Hospital with symptoms including dizziness, gait disturbance, and headache. Upon admission, the patient displayed a body temperature of 39.5 °C, blood pressure of 125/70 mm Hg, pulse rate of 60 beats/min, and respiration of 18 breaths/min. The neurological examination revealed moderate nuchal rigidity. Routine blood tests indicated an inflammatory response, with elevated neutrophil—granulocyte proportion and CRPs. An engorged adult tick had been removed from the patient two weeks before admission. Eleven days after tick removal, she had visited a local clinic with persistent high fever up to 42.0 °C and received supportive treatment with compound paracetamol tablets for two days with no clinical improvement. The routine test for the antibody of Borellia spp. and TBEV in cerebrospinal fluid (CSF) was negative for TBEV but positive for IgG antibody against Borrelia burgdorferi sensu lato (sl) at titer of 1:256 in the serum, leading to a presumptive diagnosis of Lyme disease. During her 10-day admission, the patient was administered doxycycline (100 mg/twice daily).
 
 Diagnostic Tests:
@@ -846,7 +846,7 @@ In addition, the hospital conducted a screening for Colpodella spp. in 474 Ixode
 Output: {""diabetes"": ""NO","
 
 {""diabetes"": ""NO""}</s>"," {""diabetes"": ""NO""}"
-37,37,141,"Discharge Summary:
+37,141,"Discharge Summary:
 
 Patient Name: N/A
 Gender: Male
@@ -865,7 +865,7 @@ Follow-up: There is no follow-up required as the patient is deceased.",0,{'diabe
 Output: {""diabetes"": ""NO","
 
 {""diabetes"": ""NO""}</s>"," {""diabetes"": ""NO""}"
-38,38,1809,"Discharge Summary:
+38,1809,"Discharge Summary:
 
 Patient Name: [Redacted]
 Age: 89
@@ -893,7 +893,7 @@ The patient has been enrolled in hospice care.",0,{'diabetes': 'NO'},"
 Output: {""diabetes"": ""NO","
 
 {""diabetes"": ""NO""}</s>"," {""diabetes"": ""NO""}"
-39,39,2097,"DISCHARGE SUMMARY
+39,2097,"DISCHARGE SUMMARY
 
 Patient Name: [REDACTED]
 Date of Admission: [REDACTED]
@@ -933,7 +933,7 @@ The patient has been discharged in stable condition. No further medical interven
 Output: {""diabetes"": ""Y","
 
 {""diabetes"": ""YES""}"," {""diabetes"": ""YES""}"
-40,40,2644,"Discharge Summary:
+40,2644,"Discharge Summary:
 
 Patient A.III.1 - 30-year-old female presented with antibody deficiency and CTLA-4 insufficiency. Additional complications included CNS involvement, psoriatic skin irritation, arthralgia, and a recurrent enteropathy treated with steroids and immunoglobulin replacement therapy (IGRT). She recently underwent four courses of rituximab for EBV viremia and is currently stable after the first course of AVD-Brentuximab.
 
@@ -942,7 +942,7 @@ Patient H.II.1 - 21-year-old male presented with protracted diarrhea, ITP, and A
 Output: {""diabetes"": ""NO","
 
 {""patient_A"": {""diabetes"," {""diabetes"": ""NO""}"
-41,41,2117,"Hospital Course:
+41,2117,"Hospital Course:
 
 The patient is a 10-year-old girl who presented with a firm, painless swelling in the distal right forearm. X-ray examination revealed a large lobulated, compartmentalized, osteolytic, expansive tumor mass in the metadiaphysis of the distal radius. On MRI, the tumor measured 35 × 46 × 47 mm and had a well-defined boundary, but no sclerotic margin. Imaging features were consistent with a destructive tumor that originated from the distal radius, grew slowly, and then broke through the cortex of the radius into the adjacent soft tissue.
 
@@ -955,7 +955,7 @@ The patient was discharged in stable condition and will receive follow-up with a
 Output: {""diabetes"": ""NO","
 
 {""diabetes"": ""NO""}</s>"," {""diabetes"": ""NO""}"
-42,42,1749,"Patient Identifier: [Patient Name]
+42,1749,"Patient Identifier: [Patient Name]
 Gender: Female
 Age: 58
 
@@ -983,7 +983,7 @@ The patient will receive regular follow-up care, including close monitoring of r
 Output: {""diabetes"": ""NO","
 
 {""diabetes"": ""NO""}</s>"," {""diabetes"": ""NO""}"
-43,43,1192,"Discharge Summary:
+43,1192,"Discharge Summary:
 
 Patient Name: [REDACTED]
 
@@ -1010,7 +1010,7 @@ The patient was discharged with instructions for a follow-up appointment with th
 Output: {""diabetes"": ""NO","
 
 {""diabetes"": ""NO""}</s>"," {""diabetes"": ""NO""}"
-44,44,2901,"Hospital Course:
+44,2901,"Hospital Course:
 
 The patient, a 16-year-old male with a history of relapsing nephrotic syndrome secondary to minimal change disease, presented to the emergency department with acute onset left flank pain and frank haematuria. Imaging tests revealed acute complete thrombosis of the circumaortic left renal vein, with extension into the inferior vena cava (IVC), and moderate perinephric free fluid. The patient was started on unfractionated heparin and underwent endovascular pharmacomechanical thrombolysis and thrombectomy to restore patency of the left renal vein and IVC. The patient tolerated the procedure well without complications and continued on systemic anticoagulation. Follow-up imaging tests showed the IVC and left renal vein to be patent without evidence of residual or recurrent thrombus.
 
@@ -1022,7 +1022,7 @@ The patient was discharged in stable condition and instructed to follow up with 
 Output: {""diabetes"": ""NO","
 
 {""diabetes"": ""NO""}</s>"," {""diabetes"": ""NO""}"
-45,45,765,"Hospital Course:
+45,765,"Hospital Course:
 
 The patient is a 67-year-old male with a history of type 2 diabetes mellitus (T2DM) and hypertension who presented with diplopia, right eye pain, and sinus congestion. The patient was diagnosed with mucormycosis, a fungal infection, which was treated with a combination of IV amphotericin B, isavuconazole, and surgical debridement of necrotic tissue. The patient's condition improved, and he was discharged after 19 days with a plan for outpatient follow-up evaluations with the Infectious Disease, Ear, Nose, and Throat (ENT), and Ophthalmology teams. The patient's T2DM was better controlled with oral antihyperglycemic agents, and his HbA1c improved to 5.0% from 12.4% in three months.
 
@@ -1049,7 +1049,7 @@ The patient should follow up with the Infectious Disease, ENT, and Ophthalmology
 Output: {""diabetes"": ""Y","
 
 {""diabetes"": ""YES""}"," {""diabetes"": ""YES""}"
-46,46,2840,"Patient Information:
+46,2840,"Patient Information:
 
 Name: [Redacted]
 Gender: Male
@@ -1073,7 +1073,7 @@ The patient presented with swelling and dull pain in the left mandible. After th
 Output: {""diabetes"": ""NO","
 
 {""diabetes"": ""NO""}</s>"," {""diabetes"": ""NO""}"
-47,47,1533,"Discharge Summary:
+47,1533,"Discharge Summary:
 
 Patient Name: [REDACTED]
 Sex: Female
@@ -1102,7 +1102,7 @@ The patient was discharged in stable condition, and the family was provided with
 Output: {""diabetes"": ""NO","
 
 {""diabetes"": ""NO""}</s>"," {""diabetes"": ""NO""}"
-48,48,823,"Hospital Course:
+48,823,"Hospital Course:
 An 11-year-old girl was admitted to the hospital with complaints of upper abdominal pain and recurrent vomiting. An abdominal examination revealed a nontender lump in the epigastric region. Laboratory results indicated microcytic hypochromic anemia. The patient had a history of disturbed behavior and decreased appetite for the past few months. A sibling reported observing the patient occasionally chewing on her hair, but did not report it as a significant issue.
 
 Diagnostic Tests:
@@ -1112,8 +1112,8 @@ Treatment and Outcome:
 After the surgery, the patient was discharged following psychiatric consultation. She received routine follow-ups for six months, and the current condition is good as there have been no significant complications or health issues.
 
 Conclusion:
-The case study indicates Trichobezoar is a rare digestive disorder usually found among young adults predominantly in females. It is caused by hair ingestion and leads to digestive issues requiring surgical management.",0,{'diabetes': 'NO'},"Based on the given information, there is NO evidence that",This case does NOT mention any symptoms related to diabetes.," {""diabetes"": ""MAYBE""}"
-49,49,1207,"Discharge Summary:
+The case study indicates Trichobezoar is a rare digestive disorder usually found among young adults predominantly in females. It is caused by hair ingestion and leads to digestive issues requiring surgical management.",0,{'diabetes': 'NO'},"Based on the given information, there is NO evidence that",This case does NOT mention any symptoms related to diabetes.," {""diabetes"": ""NO""}"
+49,1207,"Discharge Summary:
 
 Patient Name: [Redacted]
 Gender: Female
