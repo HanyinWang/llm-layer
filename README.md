@@ -19,7 +19,7 @@ Slides: [project-summary.pdf](https://github.com/HanyinWang/layer-project-IMO/bl
 ## Usage
 Install packages
 ```bash
-pip install torch transformers trl peft ipykernel ipywidgets faiss-cpu==1.7.4 python-liquid==1.10.2 sentence_transformers==2.2.2 openai==0.28.0 tiktoken==0.6.0
+pip install torch transformers trl peft bitsandbytes ipykernel ipywidgets faiss-cpu==1.7.4 python-liquid==1.10.2 sentence_transformers==2.2.2 openai==0.28.0 tiktoken==0.6.0
 ```
 Inference on one sample, providing a `note` and a `condition` of interest ("cancer" or "diabetes" for now).
 - With RAG
