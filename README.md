@@ -69,17 +69,10 @@ python train_reward_model.py \
 	--reward_training_data hanyinwang/layer-project-reward-training \ # data on huggingface
 	--output_dir reward_model_checkpoint/ \
 	--num_train_epochs 20 \
-	--gradient_accumulation_steps 1 \
-	--save_strategy epoch \
 	--evaluation_strategy epoch \
-	--per_device_train_batch_size 2 \
-	--per_device_eval_batch_size 1 \
-	--eval_accumulation_steps 1 \
+	--save_strategy epoch \
 	--eval_steps 1 \
 	--save_steps 1 \
-	--warmup_steps 10 \
-	--learning_rate 1e-5 \
-	--save_total_limit 1 \
 	--remove_unused_columns
 ```
 
@@ -94,7 +87,6 @@ python ppo_train_policy_model.py \
 	--push_to_hub_repo "hanyinwang/layer-project-diagnostic-mistral" \
 	--learning_rate 5e-5 \
 	--batch_size 1 \
-	--mini_batch_size 1 \
 	--gen_min_length -1 \
 	--gen_top_k 100 \
 	--gen_top_p 0.95 \
