@@ -4,7 +4,7 @@
 Slides: [project-summary.pdf](https://github.com/HanyinWang/llm-layer/blob/main/project-summary.pdf)
 ## Scope
 
-1. [Zero-shot GPT-4](https://github.com/HanyinWang/llm-layer/blob/main/code/0-GPT4.ipynb)
+1. [Zero-shot GPT-4](https://github.com/HanyinWang/llm-layer/blob/main/code/1-GPT4.ipynb)
 2. Fine-tuning using Reimforcemnent Learning with Human Feedback (RLHF)
    - Base (policy) model: [mistralai/Mistral-7B-Instruct-v0.2](https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2)
    - [Reward model fine-tuning](https://github.com/HanyinWang/llm-layer/blob/main/code/train_reward_model.py)
